@@ -1,0 +1,19 @@
+h1{
+    color: gray;
+    font-family: sans-serif;
+    text-align: center;
+}
+.kotak{
+    padding: 75px;
+    width: 75px;
+    color: #ffffff;
+    margin: 10px;
+    background: red;
+}
+#kotak{
+    width: 100px;
+    padding: 100px;
+    margin: 10px;
+    color: #ffffff;
+    background: black;
+}

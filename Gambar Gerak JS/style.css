@@ -1,0 +1,10 @@
+.sticker {
+    position: relative;
+    height: 80px;
+    width: 80px;
+    background: url(burung.png);
+    background-size: 320px 320px;
+    cursor: default;
+    background-position: 0px 0px;
+    image-rendering: -webkit-optimize-contrast;
+}

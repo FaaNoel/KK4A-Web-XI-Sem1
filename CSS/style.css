@@ -1,0 +1,43 @@
+h2{
+    color:aqua;
+    font-size:45px;
+    font-family:Arial Narrow Bold;
+    text-align:center;
+    border: 5px solid pink;
+    padding: 25px;
+}
+i {color:red}
+b{color:yellow}
+
+h1{
+    color:pink;
+    font-size:45px;
+    font-family:Arial Narrow Bold;
+    text-align:center;
+    border: 5px solid pink;
+    padding: 25px;
+}
+x{color:pink;
+  border: 2px solid plum;  
+}
+c{color:pink}
+
+h1{
+    color: gray;
+    font-family: sans-serif;
+    text-align: center;
+}
+.kotak{
+    padding: 75px;
+    width: 75px;
+    color: #ffffff;
+    margin: 10px;
+    background: red;
+}
+#kotak{
+    width: 100px;
+    padding: 100px;
+    margin: 10px;
+    color: #ffffff;
+    background: black;
+}

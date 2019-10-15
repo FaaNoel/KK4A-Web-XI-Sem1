@@ -1,0 +1,100 @@
+<!-- <p>Elfando Pratama XI RPL 4</p> -->
+<html>
+<head>
+	<title>Latihan Form</title>
+</head>
+<script type="text/javascript">
+    function data(){
+    var nama       = String(document.page.nama.value);
+    var bind        = parseFloat(document.page.bind.value);
+    var bing        = parseFloat(document.page.bing.value);
+    var mtk         = parseFloat(document.page.mtk.value);
+    var produktif   = parseFloat(document.page.produktif.value);
+    var ip      = "";
+    var ket     = "";
+
+    var na = ((2*bind)+(2*bing)+(2*mtk)+(4*produktif))/10;
+
+        if ((na > 95) && (na <=100))
+        {
+            ip="Kompeten";
+            ket="A+";
+        }
+            else if ((na > 90) && (na<=95))
+            {
+                ip="Kompeten";
+                ket="A";
+            }
+            else if ((na > 85) && (na<=90))
+            {
+                ip="Kompeten";
+                ket="B+";
+            }
+            else if ((na > 80) && (na<=85))
+            {
+                ip="Kompeten";
+                ket="B";
+            }
+            else if ((na > 75) && (na<=80))
+            {
+                ip="Kompeten";
+                ket="C";
+            }
+                else
+                {
+                    ip="Belum Kompeten";
+                    ket="K";
+                }
+            document.page.name.value=nama;
+            document.page.nak.value=na;
+            document.page.ipk.value=ip;
+            document.page.ket.value=ket;
+        }
+</script>
+<body>
+    <table>
+    <form name="page">
+            
+    <caption><h2>DAFTAR NILAI</h2></caption>
+
+    <tr><td>Nama Siswa</td><td>:</td><td> <input type="text"
+    name="nama"></td></tr>
+
+    <tr><td>NIK</td><td>:</td><td> <input type="text"
+    name="noik"></td></tr>
+
+    <tr><td>Nilai B.Indonesia</td><td>:</td><td> <input type="number"
+    name="bind"></td></tr>
+
+    <tr><td>Nilai B.Inggris</td><td>:</td><td> <input type="number"
+    name="bing"></td></tr>
+
+    <tr><td>Nilai Matematika</td><td>:</td><td> <input type="number"
+    name="mtk"></td></tr>
+
+    <tr><td>Nilai Produktif</td><td>:</td><td> <input type="number"
+    name="produktif"></td></tr>
+
+    <tr>
+    <td colspan="4" align="center">
+    <input  type="button" value="Hitung" size="20px" onclick="data()">
+    <input  type="reset" value="Ulang">
+    </tr>
+
+    <tr><td>Nama Anda</td><td>:</td><td> <input type="text"
+    name="name" disabled=""></td></tr>
+    <tr><td>Nilai Akhir</td><td>:</td><td> <input type="text"
+    name="nak" disabled=""></td></tr>
+    <tr><td>Predikat</td><td>:</td><td> <input type="text" 
+    name="ipk" disabled=""> </td></tr>
+    <tr><td>Keterangan</td><td>:</td><td> <input type="text"
+    name="ket" disabled=""></td></tr>
+                
+    
+    
+    </form>
+</table>
+                
+	
+</body>
+</html>
